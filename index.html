@@ -3,41 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Associação dos Guias do Circuito Turístico Religioso - AGCTUR</title>
+    <title>Associação dos Guias do Circuito Turístico Religioso | AGCTUR</title>
     <meta name="description" content="Descubra Aparecida com guias de turismo especializados, visite o Santuário Nacional, Frei Galvão e Canção Nova, mergulhe em histórias de fé e devoção.">  
     <!--favicon -->
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <!--CSS-->
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="conteudoCabecalho">
-        <!-- logo -->
-        <div class="logo" id="logotipo">
-           <img src="imagens/arte_logo.png" alt="Logo Tipo da AGCTUR"> 
-           <h3>AGCTUR</h3>
-        </div>    
+    <!-- cabeçalho -->
+    <header class="header">
         <!-- menu -->
-        <nav>
-            <div>
-                <ul class="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Guias de Turismo</a></li>
-                    <li><a href="#">Roteiros</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Tarifário</a></li>
-                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+        <div class="container__menu">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="assets/LOGO-AGCTUR-branco.png" alt="logotipo AGCTUR"></a>
+                </div>
+                <ul class="menu__links" id="menu__links">
+                    <a href="index.html">Inicio</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="guiasdeturismo.html">Guias de Turismo</a>
+                    <a href="tarifario.html">Tarifário</a>
+                    <a href="valedafe.html">Vale da Fé</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contato.html" class="btn__contato">Contato</a>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+            <!-- fim do menu -->
+            <!-- banner inicial -->
+            <section class="section__banner" id="section__banner">
+                <div class="text__banner">
+                    <h1>AGCTUR</h1>
+                    <p>Faça uma experiência única de fé e devoção no Santuário de Aparecida, Frei Galvão ou na Canção Nova. Participe de missas e faça roteiros exclusivos, com um de nossos guias.</p>
+                    <a href="contato.html" class="btn__contato">Entrar em Contato</a>
+                </div>
+            </section>
+        </div>
     </header>
-    <section class="primeira-secao" id="primeiraSecao">
-        <div class="conteudo-principal">
-            <!-- Titúlo  principal -->
-            <h1>Associação dos Guias do Circuito Turístico Religioso</h1>
+<!-- fim do cabeçalho -->
+<!-- conheca mais -->
+    <section class="conheca__mais">
+            <div class="conteiner__conheca__mais" id="conheca__mais">
+                <div class="conheca__mais__texto">
+                        <h3>Conheça Mais</h3>
+                        <p>Localizada no maior centro de peregrinações do Brasil, a AGCTUR tornou-se referência no receptivo de peregrinos, romeiros e turistas que vem à Aparecida, Guaratinguetá e Canção Nova. Há mais de 15 anos contribuindo com a cultura e o comércio local e engrandecendo a fé de milhares de pessoas.</p>
+                        <a href="contato.html" class="btn__contato">Entrar em Contato</a>
+                    </div>
+                <div class="conheca_mais_img">
+                    <img src="assets/conhecamais1.png" alt="Foto de Guias da AGCTUR">
+            </div>
         </div>
     </section>
 </body>

@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* resetando o projeto para inciar o processo de estilização */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* definindo e nomeando a paleta de cores */
+:root{
+    --cor0--bg: #f1f6fc31;
+    --cor1-azul:#2095ae;
+    --cor2-branco:#fff;
+    --cor3-cinzaclaro:#ddd;
+    --cor4-verde:rgb(120, 174, 32);
+    --tamanho-maximo: 1400px;
+/* nomeando as fontes que serão usadas
+    --fonte-principal: 'Ubuntu', Work Sans, sans-serif;
+    --fonte-destaque:  'Poppins', Work Sans, sans-serif;*/
+} 
+
+/* cor do body de toda a página*/
+body{
+    background-color: var(--cor0--bg);
+}
+
+/* estilizando a sessão do banner (AGCTUR) */
+.section__banner{ /*incluir o footer caso dê problema*/
+    padding: 54px 0px;
+    /*background-color: red; */
+}
+
+h3{
+    font-size: 50px;
+}
+/* p */
+p{
+    color: #0000009c;
+}
+/* textos dos links do menu */
+.container__menu {
+    width: var(--tamanho-maximo);
+    margin: 0 auto;
+    padding: 0 5%;
+}
+/* btn de contato */
+.btn__contato{
+    background-color: var(--cor1-azul);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+/* efeito de mudar a cor no btn de contato */
+.btn__contato:hover{
+    background-color: #3580db;
+}
+
+/* efeito no de esmanecer no hover do contato */
+.btn__contato:hover{
+    animation: animate-outline 1s ease-out infinite;
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #4f9bf98a;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+    }
+}
+
+/* corpo do header */
+header{
+    background-image: url("../assets/bghome.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+/* estilizando o menu */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+/* alinhamento dos links do menu */
+.menu__links{
+    display: flex;
+    align-items: center;
+}
+/* estilizando os links do menu */
+.menu__links a{
+    color: var(--cor2-branco);
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+/* efeito da linha em baixo do links do meunu */
+.menu__links a:not(.btn__contato):after{/* exceto .btn__contato*/
+    content: "";
+    background-color: var(--cor4-verde);
+    height: 3px;
+    width: 0%;
+    display: flex;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.menu__links a:hover::after{
+    width: 100%;
+}
+/* fim do efeito */
+/* fim do estilo deo menu */
+/* inicio do estilo do banner */
+
+.section__banner{
+    display: flex;
+    justify-content: center;
+}
+/* estilizando o texto do banner */
+.section__banner .text__banner{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.section__banner .text__banner h1{
+    font-size: 96px;
+    color: var(--cor2-branco);
+}
+
+.section__banner .text__banner p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+.container__conheca__mais{
+    display: flex;
+    align-items: center;
+}
+
+.conheca__mais__texto{
+    width: 50%;
+    padding: 0 40px;
+} 
+/* fim do estilo do banner */
+/* 43:21 */
+/* padrão do HTML
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%; /*tátia responsiva, se precisar mudar tamanho de fonte, é só alterar aqui*/
+    /* overflow-x: hidden;/*não terá barra de rolagem na vertical*/
+} */ */
+
+/* Estilizando o Menu/Cabeçalho
+header.conteudoCabecalho{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1e1f;
+    position: fixed;
+    padding-left: 30rem;
+}
+div.logo{
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+div.logo>h3{
+    text-transform:none ;
+    color:#60A679;
+    font-size: 5.0rem;
+}
+
+div.logo>img{
+    width: 100%;
+    height: 100%;
+}
+section.primeira-secao{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
