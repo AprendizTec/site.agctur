@@ -65,7 +65,7 @@ p{
     background-color: #3580db;
 }
 
-/* efeito no de esmanecer no hover do contato */
+/* efeito no de esmanecer no hover do btn__contato */
 .btn__contato:hover{
     animation: animate-outline 1s ease-out infinite;
 }
@@ -81,7 +81,7 @@ p{
 
 /* corpo do header */
 header{
-    background-image: url("../assets/bghome.png");
+    /* background-image: url("../assets/bghome.png"); */
     background-position: center;
     background-size: cover;
     background-attachment: fixed; 
@@ -147,17 +147,141 @@ nav{
     font-weight: lighter;
     margin: 18px 0;
 }
-
-.container__conheca__mais{
+/* Conheça Mais */
+.conheca__mais .container__conheca__mais{
     display: flex;
     align-items: center;
 }
 
-.conheca__mais__texto{
+.conheca__mais .conheca__mais__texto{
     width: 50%;
     padding: 0 40px;
 } 
+
+.conheca__mais .conheca__mais__texto h3{
+    font-size: 56px;
+}
+
+.conheca__mais .conheca__mais__texto p{
+    margin: 5px 0 10px 0;
+}
+
+.conheca__mais .conheca_mais_img{
+    width: 50%;
+    padding: 10px;
+}
+.conheca__mais .conheca_mais_img img{
+    width: 100%;
+}
 /* fim do estilo do banner */
+
+/* Depoimentos */
+.depoimentos h3{
+    text-align: center;
+}
+
+.depoimentos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.depoimentos .card__item{
+    background-color: #d3e6fd;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;/*usei para a transição de cor quando passa o mouse*/
+}
+
+.depoimentos .card__item img{
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+.depoimentos .card__item .nome__user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;/*usei para a transição de cor quando passa o mouse*/
+}
+
+.depoimentos .card__item .depoimentos__user{
+    font-size: 15px;
+    padding: 0px 15px;
+    transition: 0.3s;/*usei para a transição de cor quando passa o mouse*/
+} 
+
+.depoimentos .card__item .estrelas{
+    margin: 15px 0;
+    border-top: 2px solid #71767a23;
+}
+
+.depoimentos .card__item .estrelas i{
+    color: #4f9cf9;
+    margin-top: 15px;
+    font-size: 20px;
+    transition: 0.3s;/*usei para a transição de cor quando passa o mouse*/
+}
+/* efeito que muda a cor ao passar o mouse no card */
+.depoimentos .card__item:hover{
+    background-color: #4f9cf9;
+    margin-top: -5px;
+}
+/* efeito que muda a cor do texto do card */
+.depoimentos .card__item:hover .nome__user, 
+.depoimentos .card__item:hover .depoimento__user{
+    color: white;
+}
+/* muda a cor da estrela ao passar o mouse */
+.depoimentos .card__item:hover .estrelas i{
+    color: yellow;
+}
+
+/* Parceiros */
+.parceiros h3,
+.parceiros p{
+    text-align: center;
+}
+
+.parceiros .logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.parceiros .logos img{
+    width: 10%;
+}
+/* Fim dos Parceiros */
+/* Footer */
+.footer{
+    background-color: #4f9cf9;
+    text-align: center;
+    padding: 45px;
+}
+
+.footer i{
+    color:#4f9cf9;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+
+
 /* 43:21 */
 /* padrão do HTML
 html{
@@ -165,7 +289,6 @@ html{
     height: 100vh;
     font-size: 62.5%; /*tátia responsiva, se precisar mudar tamanho de fonte, é só alterar aqui*/
     /* overflow-x: hidden;/*não terá barra de rolagem na vertical*/
-} */ */
 
 /* Estilizando o Menu/Cabeçalho
 header.conteudoCabecalho{
